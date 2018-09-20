@@ -12,27 +12,27 @@ namespace ExesAndOhs.Tests
     public class KataTests
     {
         [TestMethod()]
-        public void XoTest()
+        public void OAndXIsEqual()
         {
             Assert.AreEqual(true, Kata.XO("xo"));
         }
         [TestMethod()]
-        public void XoTest2()
+        public void TwoOAndXIsEqual()
         {
             Assert.AreEqual(true, Kata.XO("xxOo"));
         }
         [TestMethod()]
-        public void XoTest3()
+        public void OAndXIsNotEqualandHasAnother()
         {
             Assert.AreEqual(false, Kata.XO("xxxm"));
         }
         [TestMethod()]
-        public void XoTest4()
+        public void JustTwoO()
         {
             Assert.AreEqual(false, Kata.XO("Oo"));
         }
         [TestMethod()]
-        public void XoTest5()
+        public void JustThreeOandHasAnother()
         {
             Assert.AreEqual(false, Kata.XO("ooom"));
         }
